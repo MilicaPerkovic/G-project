@@ -32,40 +32,69 @@
             <small>Arhiv 2025</small>
           </span>
         </a>
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arhiv 2025 | Antikviteti i nasleđe</title>
+    <meta
+      name="description"
+      content="Arhivska stranica sa pregledno raspoređenim fotografijama prethodne izložbe iz 2025."
+    />
+    <meta name="theme-color" content="#1b0f0b" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="archive-page">
+    <div class="page-noise"></div>
 
-        <a class="button button-secondary archive-back" href="index.html">Nazad na početnu</a>
-      </div>
-      <div class="progress-bar" aria-hidden="true">
-        <span></span>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">◊</span>
+          <span>
+            <strong>Antikviteti i nasleđe</strong>
+            <small>Arhiv 2025</small>
+          </span>
+        </a>
+
+        <a class="button button-secondary" href="index.html">Nazad na početnu</a>
       </div>
     </header>
 
     <main>
-      <section class="section reveal archive-hero">
+      <section class="hero section archive-hero">
         <div class="container hero-grid">
           <div class="eyebrow">Prethodna izložba</div>
           <h1>Arhiv 2025</h1>
           <p class="hero-lead">
-            Fotografije su ovde složene po temama kako bi se jasno videlo šta je izložba
-            obuhvatala: domaćinstvo, tekstil, tehnika, pokućstvo i predmete svakodnevnog rada.
+            Fotografije su složene po temama kako bi se jasnije videlo šta je izložba obuhvatala
+            i kako izgleda razvoj postavke kroz različite cjeline.
           </p>
         </div>
       </section>
 
-      <section class="section reveal">
-        <div class="container theme-block">
+      <section class="section">
+        <div class="container archive-block">
           <div class="section-heading">
             <span class="eyebrow">Domaćinstvo</span>
             <h2>Kuhinjski kabineti i pokućstvo</h2>
             <p>
-              Prvi deo arhiva prikazuje kućni nameštaj, ormare, police i predmete koji nose
-              atmosferu starog doma.
+              Ovaj deo prikazuje kućni nameštaj, stare ormare i predmete koji nose atmosferu
+              starog doma.
             </p>
           </div>
 
           <div class="archive-grid archive-grid-large">
             <figure class="archive-card archive-card-large">
-              <img src="slike/15d1168e807b13f45b83cdadcd7f8cd1.JPEG" alt="Zeleni kuhinjski kabinet sa posuđem i predmetima svakodnevice" loading="lazy" decoding="async" />
+              <img src="slike/15d1168e807b13f45b83cdadcd7f8cd1.JPEG" alt="Zeleni kuhinjski kabinet sa starim posuđem i predmetima svakodnevice" loading="lazy" decoding="async" />
               <figcaption>
                 <span class="label">Kabinet</span>
                 <h3>Domaći inventar i posuđe</h3>
@@ -91,14 +120,14 @@
         </div>
       </section>
 
-      <section class="section reveal">
-        <div class="container theme-block">
+      <section class="section">
+        <div class="container archive-block">
           <div class="section-heading">
             <span class="eyebrow">Tekstil</span>
             <h2>Vez, peškiri i ručni radovi</h2>
             <p>
-              Tekstilni deo je odvojen da bi se jasno video ritam vezova, natpisa i narodnih
-              motiva.
+              Tekstilni dio je odvojen kako bi se jasno videli vezovi, natpisi i narodna
+              ornamentika.
             </p>
           </div>
 
@@ -130,14 +159,14 @@
         </div>
       </section>
 
-      <section class="section reveal">
-        <div class="container theme-block">
+      <section class="section">
+        <div class="container archive-block">
           <div class="section-heading">
             <span class="eyebrow">Tehnika</span>
             <h2>Telefoni, gramofoni i radio-aparati</h2>
             <p>
-              Tehnološki predmeti su raspoređeni zasebno da bi se čitalo kako se svakodnevni
-              život menjao kroz decenije.
+              Tehnički predmeti su raspoređeni zasebno da se čita kako se svakodnevni život
+              menjao kroz decenije.
             </p>
           </div>
 
@@ -169,18 +198,18 @@
         </div>
       </section>
 
-      <section class="section reveal">
-        <div class="container theme-block">
+      <section class="section">
+        <div class="container archive-block">
           <div class="section-heading">
             <span class="eyebrow">Memorabilije</span>
             <h2>Knjige, alati i sitni predmeti</h2>
             <p>
-              Završni blok arhiva okuplja knjige, plakete, ručne alate i svakodnevne predmete
-              koji daju širinu celom izložbenom narativu.
+              Završni blok arhiva okuplja knjige, plakete, ručne alate i predmete koji daju
+              širinu čitavoj izložbenoj priči.
             </p>
           </div>
 
-          <div class="archive-grid">
+          <div class="archive-grid archive-final-grid">
             <figure class="archive-card">
               <img src="slike/9df0cd8ed2c170d32f2c2eb7144285c1.JPEG" alt="Knjige, medalje i spomen predmeti raspoređeni na stolu" loading="lazy" decoding="async" />
               <figcaption>
@@ -202,6 +231,14 @@
               <figcaption>
                 <span class="label">Lične stvari</span>
                 <h3>Predmeti lične upotrebe</h3>
+              </figcaption>
+            </figure>
+
+            <figure class="archive-card">
+              <img src="slike/a771d8aa914f2921be78c1881a7b73ec.JPEG" alt="Drvena radna površina sa knjigama i predmetima iz zbirke" loading="lazy" decoding="async" />
+              <figcaption>
+                <span class="label">Raspored</span>
+                <h3>Radna kompozicija i knjige</h3>
               </figcaption>
             </figure>
           </div>

@@ -6,19 +6,13 @@
     <title>Antikviteti i nasleđe | Početna</title>
     <meta
       name="description"
-      content="Rustikalni prototip sajta za izložbu i udruženje sa stvarnim fotografijama iz arhiva 2025."
+      content="Rustična početna stranica za izložbu i udruženje sa odvojenim arhivom 2025."
     />
-    <meta name="theme-color" content="#1d100c" />
-    <meta property="og:title" content="Antikviteti i nasleđe | Arhiv 2025" />
-    <meta
-      property="og:description"
-      content="Topli braon prototip sajta sa jasno raspoređenim fotografijama iz prethodne izložbe 2025."
-    />
-    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#1b0f0b" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -26,12 +20,11 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="backdrop"></div>
-    <div class="grain"></div>
+    <div class="page-noise"></div>
 
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#top">
+        <a class="brand" href="index.html">
           <span class="brand-mark">◊</span>
           <span>
             <strong>Antikviteti i nasleđe</strong>
@@ -46,85 +39,100 @@
         </button>
 
         <nav id="site-nav" class="site-nav">
-          <a href="archive.html">Arhiv 2025</a>
           <a href="#o-udruzenju">O udruženju</a>
+          <a href="archive.html">Arhiv 2025</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
       </div>
-      <div class="progress-bar" aria-hidden="true">
-        <span></span>
-      </div>
     </header>
 
-    <main id="top">
+    <main>
       <section class="hero section reveal">
         <div class="container hero-grid">
-          <div class="eyebrow">Udruženje agronoma i poljoprivrednika</div>
+          <div class="eyebrow">Prethodna izložba 2025</div>
           <h1>Antikviteti i nasleđe</h1>
           <p class="hero-lead">
-            Prototip sajta za izložbu sa toplim braon tonovima i jasno raspoređenim fotografijama
-            iz prethodne izložbe održane 2025. godine.
+            Jednostavan prototip sajta za izložbu i udruženje, sa toplim smeđim tonovima i
+            odvojenom arhivom za fotografije iz 2025. godine.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="archive.html">Pogledaj arhiv</a>
-            <a class="button button-secondary" href="#kontakt">Pošalji upit</a>
+            <a class="button button-primary" href="archive.html">Otvori arhiv 2025</a>
+            <a class="button button-secondary" href="#o-udruzenju">Saznaj više</a>
           </div>
 
           <div class="hero-panel">
-            <div>
-              <span class="label">Prethodna izložba</span>
-              <strong>2025</strong>
-            </div>
-            <div>
-              <span class="label">Tema</span>
-              <strong>Domaćinstvo i sećanje</strong>
-            </div>
-            <div>
-              <span class="label">Sadržaj</span>
-              <strong>Tekstil, tehnika, pokućstvo</strong>
-            </div>
+            <article>
+              <span class="label">Fokus</span>
+              <strong>Izložba i arhiv</strong>
+            </article>
+            <article>
+              <span class="label">Ton</span>
+              <strong>Rustičan i topao</strong>
+            </article>
+            <article>
+              <span class="label">Status</span>
+              <strong>Prvi prototip</strong>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section reveal">
-        <div class="container archive-teaser">
-          <div class="section-heading">
-            <span class="eyebrow">Arhiv 2025</span>
-            <h2>Prethodna izložba je odvojena na posebnu stranicu</h2>
+        <div class="container intro-grid">
+          <div class="section-heading narrow">
+            <span class="eyebrow">Šta je ovo</span>
+            <h2>Stranica za predstavljanje udruženja i izložbe</h2>
             <p>
-              Fotografije, tematske grupe i detalji postavke nalaze se na zasebnoj stranici da
-              budu pregledniji i da se ne gube u početnoj strani.
+              Sajt je zamišljen kao čist i pregledan uvod u priču o zbirci, sa dovoljno prostora
+              za kasnije dodavanje stvarnih podataka, rasporeda i kontakata.
             </p>
           </div>
 
-          <a class="button button-primary" href="archive.html">Otvori arhiv 2025</a>
+          <div class="feature-card">
+            <div class="feature-media">
+              <img
+                src="slike/1a49226b314358939cae71356e4f564d.JPEG"
+                alt="Velika dvorana sa postavkom nameštaja i predmetima iz zbirke"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="feature-copy">
+              <span class="label">Prethodna izložba</span>
+              <h3>Arhiv 2025 je na posebnoj stranici</h3>
+              <p>
+                Umjesto zbijenog prikaza, fotografije su izdvojene na posebnu stranicu i složene
+                po temama: domaćinstvo, tekstil, tehnika i memorabilije.
+              </p>
+              <a class="button button-primary" href="archive.html">Pogledaj arhiv</a>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="o-udruzenju" class="section reveal">
-        <div class="container about-layout">
+        <div class="container about-grid">
           <div class="section-heading narrow">
             <span class="eyebrow">O udruženju</span>
             <h2>Čuvanje domaćeg nasleđa</h2>
             <p>
-              Udruženje okuplja ljude koji čuvaju predmete, običaje i priče iz domaćinstava,
-              radionica i seoskog života. Na fotografijama iz 2025. vidi se kako zbirka povezuje
-              staru tehniku, tekstil, knjige i pokućstvo u jednu celinu.
+              Udruženje okuplja ljude koji čuvaju predmete, običaje i priče iz domaćinstava i
+              seoskog života. Ovaj prototip ostavlja prostor da kasnije ubaciš precizne, vjerodostojne
+              informacije.
             </p>
           </div>
 
-          <div class="about-grid-cards">
-            <article class="stat-card">
+          <div class="about-cards">
+            <article class="info-card">
               <strong>2025</strong>
               <span>Prethodna izložba</span>
             </article>
-            <article class="stat-card">
-              <strong>6+</strong>
-              <span>Tematskih grupa u arhivu</span>
+            <article class="info-card">
+              <strong>4</strong>
+              <span>Glavne tematske celine</span>
             </article>
-            <article class="stat-card">
+            <article class="info-card">
               <strong>12</strong>
               <span>Odabranih fotografija</span>
             </article>
@@ -132,14 +140,14 @@
         </div>
       </section>
 
-      <section id="kontakt" class="section reveal">
-        <div class="container contact-card">
+      <section class="section reveal">
+        <div class="container contact-card" id="kontakt">
           <div>
             <span class="eyebrow">Kontakt</span>
-            <h2>Rezerviši posetu ili pošalji upit</h2>
+            <h2>Mjesto za buduće podatke</h2>
             <p>
-              Ovaj blok služi kao privremeni kontakt prostor. Kasnije može da sadrži stvarni
-              kontakt, mapu, radno vreme i obrazac za prijavu.
+              Ovde kasnije može da stoji adresa, telefon, radno vrijeme i obrazac za prijavu.
+              Trenutno je ovo samo čista osnovna struktura za prezentaciju.
             </p>
           </div>
 
@@ -161,15 +169,5 @@
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>
-          <span class="eyebrow">Antikviteti i nasleđe</span>
-          <p>Arhiv 2025 sa stvarnim fotografijama, spreman za dalju doradu i predstavljanje.</p>
-        </div>
-        <a href="#top">Nazad na vrh</a>
-      </div>
-    </footer>
   </body>
 </html>
