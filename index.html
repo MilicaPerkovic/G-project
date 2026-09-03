@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antikviteti i nasleđe | Prototip</title>
+    <meta
+      name="description"
+      content="Prvi prototip sajta za izložbu i udruženje, u rustikalnom i toplom braon vizuelnom stilu."
+    />
+    <meta name="theme-color" content="#1d100c" />
+    <meta property="og:title" content="Antikviteti i nasleđe | Prototip" />
+    <meta
+      property="og:description"
+      content="Rustikalni prototip sajta za izložbu i udruženje sa toplim braon tonovima."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="grain"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark">◊</span>
+          <span>
+            <strong>Antikviteti i nasleđe</strong>
+            <small>Udruženje agronoma i poljoprivrednika</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav">
+          <a href="#o-udruzenju">O udruženju</a>
+          <a href="#izlozba">Izložba</a>
+          <a href="#prethodne">Prethodne</a>
+          <a href="#galerija">Galerija</a>
+          <a href="#najave">Najave</a>
+          <a href="#novosti">Novosti</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+      <div class="progress-bar" aria-hidden="true">
+        <span></span>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section reveal">
+        <div class="container hero-grid">
+          <div class="eyebrow">Udruženje agronoma i poljoprivrednika</div>
+          <h1>Antikviteti i nasleđe</h1>
+          <p class="hero-lead">
+            Prvi prototip sajta za izložbu, sa rustikalnim tonom, toplim braon nijansama i
+            jasnom strukturom za sve ključne informacije.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#izlozba">Pogledaj izložbu</a>
+            <a class="button button-secondary" href="#kontakt">Zakaži posetu</a>
+          </div>
+
+          <div class="hero-panel">
+            <div>
+              <span class="label">Trenutna postavka</span>
+              <strong>Između žetve i sećanja</strong>
+            </div>
+            <div>
+              <span class="label">Lokacija</span>
+              <strong>Dvorana zbirke</strong>
+            </div>
+            <div>
+              <span class="label">Termin</span>
+              <strong>Subota, 10–16h</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="izlozba" class="section reveal">
+        <div class="container split-layout">
+          <div class="section-heading">
+            <span class="eyebrow">Izložba</span>
+            <h2>Aktuelna postavka</h2>
+            <p>
+              Ovo je okvirni prikaz prostora za glavnu izložbu. Kasnije možeš ubaciti stvarne
+              fotografije, nazive eksponata i detalje o programu.
+            </p>
+          </div>
+
+          <article class="feature-card">
+            <div class="feature-visual placeholder-art" aria-hidden="true"></div>
+            <div class="feature-content">
+              <span class="label">Pozivnica</span>
+              <h3>Između žetve i sećanja</h3>
+              <p>
+                Postavka posvećena alatima, predmetima i običajima koji čuvaju priču o radu,
+                domaćinstvu i zajednici.
+              </p>
+              <div class="meta-row">
+                <span>Dvorana zbirke</span>
+                <span>Do 30. septembra</span>
+                <span>Ulaz slobodan</span>
+              </div>
+              <button class="button button-primary js-details" type="button" data-target="details-current">
+                Više informacija
+              </button>
+              <div class="details-panel" id="details-current" hidden>
+                <p>
+                  Ovde će kasnije stajati opis postavke, spisak predmeta i praktične informacije
+                  za posetioce.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="o-udruzenju" class="section reveal">
+        <div class="container about-grid">
+          <div class="section-heading narrow">
+            <span class="eyebrow">O udruženju</span>
+            <h2>Četrdeset godina posvećenosti</h2>
+          </div>
+
+          <div class="about-text">
+            <p>
+              Udruženje okuplja agronome, poljoprivrednike i ljubitelje nasleđa sa ciljem da
+              sačuva sećanje na alate, običaje i rad koji su oblikovali domaćinstva i lokalnu
+              zajednicu.
+            </p>
+            <p>
+              Prostor je zamišljen kao jednostavan, topao i pregledan sajt sa svim ključnim
+              informacijama, ali i sa dovoljno karaktera da izgleda kao premium prototip.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <article class="stat-card">
+              <strong>1984</strong>
+              <span>Godina osnivanja</span>
+            </article>
+            <article class="stat-card">
+              <strong>120+</strong>
+              <span>Predmeta u zbirci</span>
+            </article>
+            <article class="stat-card">
+              <strong>12</strong>
+              <span>Izložbi i programa</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="prethodne" class="section reveal">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Arhiv</span>
+            <h2>Prethodne izložbe</h2>
+          </div>
+
+          <div class="cards-grid">
+            <article class="exhibit-card">
+              <div class="card-visual visual-one"></div>
+              <div class="card-body">
+                <span class="label">2024</span>
+                <h3>Rad od žita</h3>
+                <p>Alati, oruđe i svakodnevni predmeti iz poljoprivrednog života.</p>
+              </div>
+            </article>
+
+            <article class="exhibit-card">
+              <div class="card-visual visual-two"></div>
+              <div class="card-body">
+                <span class="label">2023</span>
+                <h3>Porcelan i loz</h3>
+                <p>Predmeti domaćinstva, posuđe i porodične priče sa sela.</p>
+              </div>
+            </article>
+
+            <article class="exhibit-card">
+              <div class="card-visual visual-three"></div>
+              <div class="card-body">
+                <span class="label">2022</span>
+                <h3>Bakra i vatra</h3>
+                <p>Kuhinjski predmeti, bakarni sudovi i topli prizori svakodnevice.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="najave" class="section reveal">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Najavljeno</span>
+            <h2>Predstojeće izložbe</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div>
+                <span class="label">Proleće · 15. maj</span>
+                <h3>Polje i predmet</h3>
+                <p>Ranorekolski alati i biljni uzorci iz arhive udruženja.</p>
+              </div>
+              <button class="button button-secondary js-details" type="button" data-target="details-spring">
+                Detalji
+              </button>
+              <div class="details-panel" id="details-spring" hidden>
+                <p>Ovde će ići program, gosti i tačan raspored otvaranja izložbe.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div>
+                <span class="label">Jesen · 8. oktobar</span>
+                <h3>Bakra i vatra</h3>
+                <p>Kuhinjsko bačvarstvo i bakarni pribor iz starog domaćinstva.</p>
+              </div>
+              <button class="button button-secondary js-details" type="button" data-target="details-autumn">
+                Detalji
+              </button>
+              <div class="details-panel" id="details-autumn" hidden>
+                <p>Ovde može da stoji pozivnica, satnica, prijava i kontakt za grupne posete.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="novosti" class="section reveal">
+        <div class="container">
+          <div class="section-heading narrow">
+            <span class="eyebrow">Iz novina</span>
+            <h2>Novinski članci</h2>
+          </div>
+
+          <div class="news-list">
+            <article class="news-item">
+              <span class="news-date">12. jun 2024</span>
+              <h3>Kustos poklanja radnu kolekciju gradu</h3>
+              <p>Izveštaj iz kulturnog priloga</p>
+            </article>
+            <article class="news-item">
+              <span class="news-date">3. mart 2024</span>
+              <h3>Etnografska komisija obilježava zbirku</h3>
+              <p>Regionalni dnevnik</p>
+            </article>
+            <article class="news-item">
+              <span class="news-date">19. nov 2023</span>
+              <h3>Otvorena četvrta dvorana muzeja</h3>
+              <p>Poljoprivredni vestnik</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="galerija" class="section reveal">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Galerija</span>
+            <h2>Prostor za fotografije</h2>
+            <p>
+              Ovo je privremeni vizuelni blok za buduće slike. Kasnije može da postane stvarna
+              galerija postavke, detalja eksponata i atmosfere događaja.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card gallery-large">
+              <div class="gallery-art gallery-art-one" aria-hidden="true"></div>
+              <figcaption>
+                <span class="label">Glavna scena</span>
+                <h3>Centralni pogled na postavku</h3>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+              <div class="gallery-art gallery-art-two" aria-hidden="true"></div>
+              <figcaption>
+                <span class="label">Detalj</span>
+                <h3>Ručni alati i teksture</h3>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+              <div class="gallery-art gallery-art-three" aria-hidden="true"></div>
+              <figcaption>
+                <span class="label">Ambijent</span>
+                <h3>Toplina bakra i drveta</h3>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section reveal">
+        <div class="container contact-card">
+          <div>
+            <span class="eyebrow">Kontakt</span>
+            <h2>Rezerviši posetu ili pošalji upit</h2>
+            <p>
+              Ovaj blok služi kao privremeni kontakt prostor. Kasnije može da sadrži stvarni
+              kontakt, mapu, radno vreme i obrazac za prijavu.
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              Ime i prezime
+              <input type="text" placeholder="Tvoje ime" />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="ime@primer.rs" />
+            </label>
+            <label>
+              Poruka
+              <textarea rows="4" placeholder="Napiši kratko šta te zanima"></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Pošalji upit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <span class="eyebrow">Antikviteti i nasleđe</span>
+          <p>Prvi prototip za izložbu i udruženje, spreman za dalju doradu.</p>
+        </div>
+        <a href="#top">Nazad na vrh</a>
+      </div>
+    </footer>
+  </body>
+</html>
